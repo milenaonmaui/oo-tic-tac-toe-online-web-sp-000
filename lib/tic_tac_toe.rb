@@ -53,4 +53,8 @@ end
     puts "-----------"
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
+
+  def turn_count
+    @board.count { |token| token == 'X' || token == 'O' }
+  end
 end
